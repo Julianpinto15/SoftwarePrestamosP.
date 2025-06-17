@@ -151,7 +151,7 @@ julianpinto15-software-prestamos/
 
 1. **📥 Clonar el repositorio**
    ```bash
-   git clone https://github.com/Julianpinto15/SoftwarePrestamosP.git
+   git clone https://github.com/Julianpinto15/SoftwarePrestamosP..git
    cd SoftwarePrestamosP/mini-control-empleados
    ```
 
