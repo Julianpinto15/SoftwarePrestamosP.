@@ -12,7 +12,6 @@
 
 ### 💼 **Gestión Integral de Préstamos**
 - **Control de préstamos** con seguimiento completo
-- **Sistema de amortización** personalizable
 - **Gestión de pagos** con recordatorios automáticos
 - **Reportes financieros** detallados y exportables
 
@@ -20,12 +19,11 @@
 - **Sistema de autenticación** con Spring Security
 - **Control de accesos** por roles y permisos
 - **Gestión de empleados** con perfiles completos
-- **Auditoría de transacciones** en tiempo real
+
 
 ### 📊 **Módulos Especializados**
 - **Control de Caja** con movimientos diarios
-- **Gestión de Clientes** con historial crediticio
-- **Reportes Ejecutivos** con gráficos interactivos
+- **Gestión de Clientes** con informacion detallada
 - **Exportación de datos** a Excel y PDF
 
 ### 🎨 **Interfaz Moderna**
@@ -46,7 +44,6 @@
 - **Thymeleaf** - Motor de plantillas
 - **Bootstrap 5** - Framework CSS
 - **JavaScript ES6+** - Interactividad del cliente
-- **Chart.js** - Gráficos y visualizaciones
 
 ### **Base de Datos**
 - **H2 Database** - Base de datos en memoria (desarrollo)
@@ -128,13 +125,12 @@ julianpinto15-software-prestamos/
 - ✅ **Cálculo de intereses** configurables
 - ✅ **Cronograma de pagos** personalizable
 - ✅ **Seguimiento de mora** con alertas
-- ✅ **Historial crediticio** completo
+
 
 ### 📈 **Gestión de Caja y Finanzas**
 - 💵 **Control de efectivo** en tiempo real
 - 📊 **Movimientos diarios** detallados
 - 💰 **Balance general** automático
-- 🔄 **Conciliación bancaria** simplificada
 - 📋 **Reportes de flujo de caja**
 
 ### 🔐 **Seguridad Empresarial**
@@ -142,7 +138,6 @@ julianpinto15-software-prestamos/
 - 🔒 **Autenticación robusta** con roles
 - 👤 **Control de sesiones** seguras
 - 🚫 **Protección CSRF** habilitada
-- 📝 **Auditoría de acciones** completa
 
 ## 🛠 Instalación y Configuración
 
@@ -156,8 +151,8 @@ julianpinto15-software-prestamos/
 
 1. **📥 Clonar el repositorio**
    ```bash
-   git clone https://github.com/julianpinto15/sistema-prestamos-spring.git
-   cd sistema-prestamos-spring/mini-control-empleados
+   git clone https://github.com/Julianpinto15/SoftwarePrestamosP.git
+   cd SoftwarePrestamosP/mini-control-empleados
    ```
 
 2. **⚙️ Configurar base de datos**
@@ -165,11 +160,11 @@ julianpinto15-software-prestamos/
    # Editar src/main/resources/application.properties
    
    # Para desarrollo (H2)
-   spring.datasource.url=jdbc:h2:mem:prestamosdb
+   spring.datasource.url=jdbc:h2:mem:prestamistas
    spring.h2.console.enabled=true
    
    # Para producción (MySQL)
-   spring.datasource.url=jdbc:mysql://localhost:3306/prestamos_db
+   spring.datasource.url=jdbc:mysql://localhost:3306/prestamistas
    spring.datasource.username=tu_usuario
    spring.datasource.password=tu_password
    ```
@@ -189,21 +184,16 @@ julianpinto15-software-prestamos/
 4. **🌐 Acceder a la aplicación**
    - **URL:** http://localhost:8080
    - **Usuario:** admin
-   - **Contraseña:** admin123
+   - **Contraseña:** admin
    - **H2 Console:** http://localhost:8080/h2-console
 
 ## 🎯 Casos de Uso Perfectos
 
 ### 🏦 **Instituciones Financieras**
-- ✅ Cooperativas de crédito
-- ✅ Cajas de ahorro
-- ✅ Bancos comunales
-- ✅ Microfinancieras
+- ✅ Microempresas de prestamos
 
 ### 💼 **Empresas de Servicios**
 - ✅ Préstamos a empleados
-- ✅ Adelantos de nómina
-- ✅ Créditos rotativos
 - ✅ Financiamiento interno
 
 ## 📸 Capturas del Sistema
@@ -252,7 +242,7 @@ julianpinto15-software-prestamos/
 - [ ] 🌍 **Internacionalización** completa
 
 ### 🛠️ **Mejoras Técnicas**
-- [ ] ⚗️ **Migración a Spring Boot 3.2**
+- [ ] ⚗️ **Migración a Spring Boot actualizado**
 - [ ] 🐳 **Dockerización** completa
 - [ ] ☁️ **Despliegue en la nube** (AWS/Azure)
 - [ ] 📈 **Métricas avanzadas** con Micrometer
@@ -276,32 +266,6 @@ julianpinto15-software-prestamos/
                         │  🗄️ Repositorio │
                         │  (Data Access)  │
                         └─────────────────┘
-```
-
-## 🔧 Comandos Útiles
-
-### **Desarrollo**
-```bash
-# Ejecutar en modo desarrollo
-./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
-
-# Ejecutar tests
-./mvnw test
-
-# Generar JAR ejecutable
-./mvnw clean package
-
-# Ejecutar JAR
-java -jar target/mini-control-empleados-1.0.jar
-```
-
-### **Producción**
-```bash
-# Compilar para producción
-./mvnw clean package -Pprod
-
-# Ejecutar con perfil de producción
-java -jar -Dspring.profiles.active=prod target/app.jar
 ```
 
 ## 📄 Licencia
@@ -330,7 +294,7 @@ Este proyecto está bajo la **Licencia MIT** - ver [LICENSE](LICENSE) para más 
 
 Si este sistema te ha sido útil, ¡considera darle una ⭐ en GitHub!
 
-**[⭐ Star en GitHub](https://github.com/Julianpinto15/sistema-prestamos-spring)**
+**[⭐ Star en GitHub](https://github.com/Julianpinto15/SoftwarePrestamosP.)**
 
 </div>
 
