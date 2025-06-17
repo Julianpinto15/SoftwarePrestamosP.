@@ -1,2 +1,342 @@
-# Software-prestamos
-Sistema para validar prestamos.
+# 💰 Sistema de Gestión de Préstamos - Spring Boot
+
+> Sistema completo de gestión de préstamos empresariales desarrollado en **Spring Boot** con arquitectura MVC para instituciones financieras y empresas de microcréditos.
+
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0+-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![Java](https://img.shields.io/badge/Java-17+-blue.svg)](https://www.oracle.com/java/)
+[![Maven](https://img.shields.io/badge/Maven-3.8+-red.svg)](https://maven.apache.org/)
+[![Thymeleaf](https://img.shields.io/badge/Thymeleaf-3.0+-green.svg)](https://www.thymeleaf.org/)
+[![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
+
+## 🌟 Características Principales
+
+### 💼 **Gestión Integral de Préstamos**
+- **Control de préstamos** con seguimiento completo
+- **Sistema de amortización** personalizable
+- **Gestión de pagos** con recordatorios automáticos
+- **Reportes financieros** detallados y exportables
+
+### 👥 **Administración de Usuarios**
+- **Sistema de autenticación** con Spring Security
+- **Control de accesos** por roles y permisos
+- **Gestión de empleados** con perfiles completos
+- **Auditoría de transacciones** en tiempo real
+
+### 📊 **Módulos Especializados**
+- **Control de Caja** con movimientos diarios
+- **Gestión de Clientes** con historial crediticio
+- **Reportes Ejecutivos** con gráficos interactivos
+- **Exportación de datos** a Excel y PDF
+
+### 🎨 **Interfaz Moderna**
+- **Diseño responsive** con Bootstrap
+- **Dashboard ejecutivo** con métricas clave
+- **Navegación intuitiva** y accesible
+- **Notificaciones** en tiempo real
+
+## 🚀 Tecnologías Utilizadas
+
+### **Backend**
+- **Spring Boot 3.0+** - Framework principal
+- **Spring Security** - Autenticación y autorización
+- **Spring Data JPA** - Persistencia de datos
+- **Maven** - Gestión de dependencias
+
+### **Frontend**
+- **Thymeleaf** - Motor de plantillas
+- **Bootstrap 5** - Framework CSS
+- **JavaScript ES6+** - Interactividad del cliente
+- **Chart.js** - Gráficos y visualizaciones
+
+### **Base de Datos**
+- **H2 Database** - Base de datos en memoria (desarrollo)
+- **MySQL/PostgreSQL** - Producción
+- **JPA/Hibernate** - ORM
+
+### **Librerías Integradas**
+- **Apache POI** - Exportación a Excel
+- **iText PDF** - Generación de reportes PDF
+- **Spring Boot DevTools** - Desarrollo ágil
+
+## 📁 Arquitectura del Sistema
+
+```
+julianpinto15-software-prestamos/
+├── 📄 README.md                    # Documentación principal
+└── 💰 mini-control-empleados/      # Aplicación principal
+    ├── 🔧 mvnw                     # Maven wrapper (Unix)
+    ├── 🔧 mvnw.cmd                 # Maven wrapper (Windows)
+    ├── 📋 pom.xml                  # Configuración Maven
+    ├── 🚫 .gitignore               # Archivos ignorados por Git
+    ├── 📂 src/
+    │   ├── 🎯 main/
+    │   │   ├── ☕ java/
+    │   │   │   └── 📦 com/gestion/prestamos/
+    │   │   │       ├── 🚀 MiniControlEmpleadosApplication.java
+    │   │   │       ├── ⚙️ MvcConfig.java
+    │   │   │       ├── 🔐 PasswordGenerator.java
+    │   │   │       ├── 🛡️ WebSecurityConfig.java
+    │   │   │       ├── 🎮 controlador/
+    │   │   │       │   ├── 💰 CajaController.java
+    │   │   │       │   └── 📊 PrestamoController.java
+    │   │   │       ├── 🏗️ entidades/
+    │   │   │       │   ├── 💵 Caja.java
+    │   │   │       │   ├── 💳 Prestamo.java
+    │   │   │       │   └── 👤 Usuario.java
+    │   │   │       ├── 🗄️ repositorios/
+    │   │   │       │   ├── 💰 CajaRepository.java
+    │   │   │       │   ├── 📊 PrestamoRepository.java
+    │   │   │       │   └── 👥 UsuarioRepositorio.java
+    │   │   │       ├── 🔧 servicio/
+    │   │   │       │   ├── 💰 CajaService.java
+    │   │   │       │   ├── 📊 PrestamoService.java
+    │   │   │       │   └── 🔄 PrestamoServiceImpl.java
+    │   │   │       └── 🛠️ util/
+    │   │   │           ├── 📄 paginacion/
+    │   │   │           │   ├── 📃 PageItem.java
+    │   │   │           │   └── 🔢 PageRender.java
+    │   │   │           └── 📈 reportes/
+    │   │   │               ├── 📊 PrestamoExporterExcel.java
+    │   │   │               └── 📋 PrestamoExporterPDF.java
+    │   │   └── 📁 resources/
+    │   │       ├── ⚙️ application.properties
+    │   │       ├── 🌐 messages.properties
+    │   │       ├── 📂 META-INF/
+    │   │       │   └── 📋 MANIFEST.MF
+    │   │       └── 🎨 templates/
+    │   │           ├── 💰 agregarDinero.html
+    │   │           ├── ✏️ editarCaja.html
+    │   │           ├── 📝 form.html
+    │   │           ├── 📊 listar.html
+    │   │           ├── 🔐 login.html
+    │   │           ├── 📄 paginator-nav.html
+    │   │           └── 🎭 layout/
+    │   │               └── 🏗️ layout.html
+    │   └── 🧪 test/
+    │       └── ☕ java/
+    │           └── 📦 com/gestion/prestamos/
+    │               └── 🔬 MiniControlEmpleadosApplicationTests.java
+    └── 📂 .mvn/
+        └── 🔧 wrapper/
+            └── ⚙️ maven-wrapper.properties
+```
+
+## ⚡ Funcionalidades Destacadas
+
+### 💰 **Sistema de Préstamos Avanzado**
+- ✅ **Solicitudes de préstamo** con evaluación automática
+- ✅ **Cálculo de intereses** configurables
+- ✅ **Cronograma de pagos** personalizable
+- ✅ **Seguimiento de mora** con alertas
+- ✅ **Historial crediticio** completo
+
+### 📈 **Gestión de Caja y Finanzas**
+- 💵 **Control de efectivo** en tiempo real
+- 📊 **Movimientos diarios** detallados
+- 💰 **Balance general** automático
+- 🔄 **Conciliación bancaria** simplificada
+- 📋 **Reportes de flujo de caja**
+
+### 🔐 **Seguridad Empresarial**
+- 🛡️ **Spring Security** integrado
+- 🔒 **Autenticación robusta** con roles
+- 👤 **Control de sesiones** seguras
+- 🚫 **Protección CSRF** habilitada
+- 📝 **Auditoría de acciones** completa
+
+## 🛠 Instalación y Configuración
+
+### Prerrequisitos
+- **Java 17+** con JDK completo
+- **Maven 3.8+** para gestión de dependencias
+- **IDE recomendado**: IntelliJ IDEA / Eclipse / VS Code
+- **Git** para control de versiones
+
+### Pasos de Instalación
+
+1. **📥 Clonar el repositorio**
+   ```bash
+   git clone https://github.com/julianpinto15/sistema-prestamos-spring.git
+   cd sistema-prestamos-spring/mini-control-empleados
+   ```
+
+2. **⚙️ Configurar base de datos**
+   ```properties
+   # Editar src/main/resources/application.properties
+   
+   # Para desarrollo (H2)
+   spring.datasource.url=jdbc:h2:mem:prestamosdb
+   spring.h2.console.enabled=true
+   
+   # Para producción (MySQL)
+   spring.datasource.url=jdbc:mysql://localhost:3306/prestamos_db
+   spring.datasource.username=tu_usuario
+   spring.datasource.password=tu_password
+   ```
+
+3. **🏗️ Compilar y ejecutar**
+   ```bash
+   # Compilar proyecto
+   ./mvnw clean compile
+   
+   # Ejecutar aplicación
+   ./mvnw spring-boot:run
+   
+   # O usar Maven instalado
+   mvn spring-boot:run
+   ```
+
+4. **🌐 Acceder a la aplicación**
+   - **URL:** http://localhost:8080
+   - **Usuario:** admin
+   - **Contraseña:** admin123
+   - **H2 Console:** http://localhost:8080/h2-console
+
+## 🎯 Casos de Uso Perfectos
+
+### 🏦 **Instituciones Financieras**
+- ✅ Cooperativas de crédito
+- ✅ Cajas de ahorro
+- ✅ Bancos comunales
+- ✅ Microfinancieras
+
+### 💼 **Empresas de Servicios**
+- ✅ Préstamos a empleados
+- ✅ Adelantos de nómina
+- ✅ Créditos rotativos
+- ✅ Financiamiento interno
+
+## 📸 Capturas del Sistema
+
+### 🎛️ Dashboard Ejecutivo
+![Dashboard](https://via.placeholder.com/800x400/2563eb/white?text=Dashboard+Prestamos)
+
+### 💰 Gestión de Préstamos
+![Prestamos](https://via.placeholder.com/800x400/059669/white?text=Gestion+Prestamos)
+
+### 📊 Control de Caja
+![Caja](https://via.placeholder.com/800x400/dc2626/white?text=Control+Caja)
+
+### 📈 Reportes Avanzados
+![Reportes](https://via.placeholder.com/800x400/7c3aed/white?text=Reportes+Financieros)
+
+## 🔄 Características Spring Boot
+
+### ⚡ **Funcionalidades Modernas**
+- 🚀 **Auto-configuración** inteligente
+- 🔄 **Hot reload** con DevTools
+- 📊 **Actuators** para monitoreo
+- 🏗️ **Inyección de dependencias** automática
+- 🔧 **Profiles** para diferentes entornos
+
+## 📋 Módulos del Sistema
+
+| Módulo | Descripción | Tecnología | Estado |
+|--------|-------------|------------|--------|
+| 🔐 **Autenticación** | Login y gestión de sesiones | Spring Security | ✅ |
+| 💰 **Préstamos** | Gestión completa de créditos | Spring Data JPA | ✅ |
+| 💵 **Caja** | Control de efectivo y movimientos | Thymeleaf + JPA | ✅ |
+| 👥 **Usuarios** | Administración de empleados | Spring Security | ✅ |
+| 📊 **Reportes** | Excel y PDF exportables | Apache POI + iText | ✅ |
+| 🎨 **Templates** | Interfaz responsive | Thymeleaf + Bootstrap | ✅ |
+| 🧪 **Testing** | Pruebas unitarias | JUnit 5 + Mockito | ✅ |
+
+## 🎉 Roadmap de Desarrollo
+
+### 🔮 **Próximas Características**
+- [ ] 📱 **API REST** para aplicaciones móviles
+- [ ] 🌐 **Multi-tenancy** para múltiples empresas
+- [ ] 💳 **Integración con pasarelas de pago**
+- [ ] 📊 **Dashboard BI** con análisis predictivo
+- [ ] 🔔 **Notificaciones push** automáticas
+- [ ] 🌍 **Internacionalización** completa
+
+### 🛠️ **Mejoras Técnicas**
+- [ ] ⚗️ **Migración a Spring Boot 3.2**
+- [ ] 🐳 **Dockerización** completa
+- [ ] ☁️ **Despliegue en la nube** (AWS/Azure)
+- [ ] 📈 **Métricas avanzadas** con Micrometer
+- [ ] 🔍 **Logging estructurado** con Logback
+
+## 🏗️ Arquitectura Técnica
+
+### **Patrón MVC Implementado**
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   📱 Vista      │────│  🎮 Controlador │────│  🏗️ Modelo      │
+│  (Thymeleaf)    │    │  (Controllers)  │    │  (Entidades)    │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+                                │
+                        ┌─────────────────┐
+                        │  🔧 Servicios   │
+                        │  (Business)     │
+                        └─────────────────┘
+                                │
+                        ┌─────────────────┐
+                        │  🗄️ Repositorio │
+                        │  (Data Access)  │
+                        └─────────────────┘
+```
+
+## 🔧 Comandos Útiles
+
+### **Desarrollo**
+```bash
+# Ejecutar en modo desarrollo
+./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
+
+# Ejecutar tests
+./mvnw test
+
+# Generar JAR ejecutable
+./mvnw clean package
+
+# Ejecutar JAR
+java -jar target/mini-control-empleados-1.0.jar
+```
+
+### **Producción**
+```bash
+# Compilar para producción
+./mvnw clean package -Pprod
+
+# Ejecutar con perfil de producción
+java -jar -Dspring.profiles.active=prod target/app.jar
+```
+
+## 📄 Licencia
+
+Este proyecto está bajo la **Licencia MIT** - ver [LICENSE](LICENSE) para más detalles.
+
+## 👨‍💻 Desarrolladores
+
+**Julián Pinto** - Desarrollador Full Stack
+- 🌐 **GitHub:** [@julianpinto15](https://github.com/Julianpinto15)
+- 💼 **LinkedIn:** [Julián Pinto](https://www.linkedin.com/in/julian-pinto15/)
+- 📧 **Email:** julianpinto700@gmail.com
+
+---
+
+**Santiago Barbosa** - Desarrollador Full Stack
+- 🌐 **GitHub:** [@BARBOSA191919](https://github.com/BARBOSA191919)
+- 💼 **LinkedIn:** [Santiago Barbosa](https://www.linkedin.com/in/santiago-barbosa-903641209/)
+- 📧 **Email:** sbarbosarivas@gmail.com
+
+---
+
+<div align="center">
+
+### 💡 ¿Te gusta el proyecto?
+
+Si este sistema te ha sido útil, ¡considera darle una ⭐ en GitHub!
+
+**[⭐ Star en GitHub](https://github.com/Julianpinto15/sistema-prestamos-spring)**
+
+</div>
+
+---
+
+<div align="center">
+  <strong>Desarrollado con ❤️ para instituciones financieras modernas</strong><br>
+  <em>Sistema de Gestión de Préstamos - Spring Boot Professional</em>
+</div>
