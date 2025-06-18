@@ -213,8 +213,12 @@ julianpinto15-software-prestamos/
 ### 📊 Informacion Prestamo
 ![Iformacion](https://github.com/user-attachments/assets/dbfbbe0a-ef59-4303-87ee-df5607952264)
 
-### 📈 Reportes Avanzados
-![Reportes](https://via.placeholder.com/800x400/7c3aed/white?text=Reportes+Financieros)
+### 📈 Registrar Abono
+![Abono](https://github.com/user-attachments/assets/e7973260-c37a-4b57-b90d-e441e6a5b5dd)
+
+### 📈 Agregar dinero
+![Agregar](https://github.com/user-attachments/assets/b417397a-3071-47bd-8bbf-e354e545a565)
+
 
 ## 🔄 Características Spring Boot
 
