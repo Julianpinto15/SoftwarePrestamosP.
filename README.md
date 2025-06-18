@@ -198,14 +198,20 @@ julianpinto15-software-prestamos/
 
 ## 📸 Capturas del Sistema
 
+### 🛡️Login
+![Login](https://github.com/user-attachments/assets/2e0c95bb-054f-43f9-862c-be8537e68b14)
+
 ### 🎛️ Dashboard Ejecutivo
-![Dashboard](https://via.placeholder.com/800x400/2563eb/white?text=Dashboard+Prestamos)
+![Dashboard](https://github.com/user-attachments/assets/49a2e311-dca3-431e-b841-48f3632ba452)
 
 ### 💰 Gestión de Préstamos
-![Prestamos](https://via.placeholder.com/800x400/059669/white?text=Gestion+Prestamos)
+![Prestamos](https://github.com/user-attachments/assets/22f7a507-7e25-4ac4-a2b5-ef6ca4d2db71)
 
-### 📊 Control de Caja
-![Caja](https://via.placeholder.com/800x400/dc2626/white?text=Control+Caja)
+### 💰 Edicion de Préstamos
+![EdiccionPrestamo](https://github.com/user-attachments/assets/f39642a0-9074-4bb7-b58d-da1b4ca1d508)
+
+### 📊 Informacion Prestamo
+![Iformacion](https://github.com/user-attachments/assets/dbfbbe0a-ef59-4303-87ee-df5607952264)
 
 ### 📈 Reportes Avanzados
 ![Reportes](https://via.placeholder.com/800x400/7c3aed/white?text=Reportes+Financieros)
